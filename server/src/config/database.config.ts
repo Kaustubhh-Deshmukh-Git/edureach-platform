@@ -1,15 +1,16 @@
 import mongoose from "mongoose";
 import { env } from "./env.config.ts";
+import { logger } from "../utils/logger.util.ts";
 
 export async function connectDB(): Promise<typeof mongoose> {
   try {
     const conn = await mongoose.connect(env.MONGODB_URI);
     const host = conn.connection.host;
     const name = conn.connection.name;
-    console.log(`MongoDB connected: ${host}/${name}`);
+    logger.info(`MongoDB connected: ${host}/${name}`);
     return conn;
   } catch (error) {
-    console.error("MongoDB connection error:", error);
+    logger.error(error, "MongoDB connection error");
     throw error;
   }
 }
@@ -17,9 +18,9 @@ export async function connectDB(): Promise<typeof mongoose> {
 export async function disconnectDB(): Promise<void> {
   try {
     await mongoose.disconnect();
-    console.log("MongoDB disconnected successfully");
+    logger.info("MongoDB disconnected successfully");
   } catch (error) {
-    console.error("MongoDB disconnection error:", error);
+    logger.error(error, "MongoDB disconnection error");
     throw error;
   }
 }
