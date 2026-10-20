@@ -25,7 +25,7 @@
     "express-rate-limit": "8.7.1",
     "helmet": "8.3.0",
     "jsonwebtoken": "9.0.3",
-    "langchain": "1.2.26",
+    "langchain": "1.5.18",
     "mongodb": "7.0.0",
     "mongoose": "9.2.1",
     "pino": "10.4.0",
