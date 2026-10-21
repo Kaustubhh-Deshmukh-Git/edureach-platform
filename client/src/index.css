@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #7b1e2b;
+  --color-maroon-light: #9b3344;
+  --color-maroon-dark: #5a1520;
+  --color-cream: #faf7f5;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Source Sans 3", sans-serif;
+}
