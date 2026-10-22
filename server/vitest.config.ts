@@ -8,5 +8,6 @@ export default defineConfig({
     globals: true,
     hookTimeout: 180000,
     testTimeout: 60000,
+    fileParallelism: false,
   },
 });
