@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { GraduationCap, Award, BookOpen, MessageSquare } from "lucide-react";
 import { mentorsContent } from "../data/content.ts";
 
@@ -6,8 +7,37 @@ export interface MentorsSectionProps {
 }
 
 export default function MentorsSection({ onReachMentors }: MentorsSectionProps) {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const hasTriggeredRef = useRef(false);
+
+  useEffect(() => {
+    if (!onReachMentors) return;
+    if (typeof IntersectionObserver === "undefined") return;
+
+    const target = sectionRef.current;
+    if (!target) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting && !hasTriggeredRef.current) {
+          hasTriggeredRef.current = true;
+          onReachMentors();
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(target);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [onReachMentors]);
+
   return (
-    <section id="mentors" className="py-20 lg:py-28 bg-white font-body">
+    <section id="mentors" ref={sectionRef} className="py-20 lg:py-28 bg-white font-body">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
