@@ -41,7 +41,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900 font-body antialiased">
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
         {/* Public Sections — Always Visible */}
         <HeroSection />
         <AboutSection />
