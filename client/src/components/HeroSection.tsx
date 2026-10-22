@@ -25,7 +25,7 @@ export default function HeroSection() {
 
             {/* Main Title */}
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white">
-              Shaping Tomorrow’s{" "}
+              EduReach College — Shaping Tomorrow’s{" "}
               <span className="text-amber-200 underline decoration-amber-300/40 decoration-wavy underline-offset-8">
                 Leaders & Engineers
               </span>
