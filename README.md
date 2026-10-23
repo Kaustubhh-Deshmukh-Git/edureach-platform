@@ -112,11 +112,11 @@ Visit **`http://localhost:5173`** to access the application.
 The monorepo includes automated linting, typechecking, unit tests, integration tests, and production bundle builds:
 
 ```bash
-# Run full monorepo verification (all 72+ tests across client and server)
+# Run full monorepo verification (all 99+ tests across client and server)
 npm run verify
 
 # Run individual package test suites
-npm --prefix server run test      # 37 server tests (MongoMemoryServer)
+npm --prefix server run test      # 64 server tests (vitest + MongoMemoryServer)
 npm --prefix client run test      # 35 client tests (RTL + jsdom)
 
 # Code quality and typing
