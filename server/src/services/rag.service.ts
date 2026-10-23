@@ -237,7 +237,7 @@ export async function getRAGResponse(question: string): Promise<string> {
   try {
     const model = new ChatGoogleGenerativeAI({
       apiKey: env.GOOGLE_API_KEY,
-      model: "gemini-2.5-flash",
+      model: "gemini-3.5-flash",
       temperature: 0.2,
     });
 
