@@ -209,7 +209,7 @@ export default function ChatDrawer({ open, onClose, triggerRef }: ChatDrawerProp
         <button
           type="button"
           onClick={onClose}
-          aria-label="Close chat assistant"
+          aria-label="Close assistant drawer"
           className="p-1.5 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-gold"
         >
           <X className="w-5 h-5" />
