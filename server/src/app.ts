@@ -5,6 +5,7 @@ import { pinoHttp } from "pino-http";
 import { env } from "./config/env.config.ts";
 import { logger } from "./utils/logger.util.ts";
 import { authRoutes } from "./routes/auth.routes.ts";
+import { chatRoutes } from "./routes/chat.routes.ts";
 import { errorHandler } from "./middleware/error-handler.middleware.ts";
 import { notFound } from "./middleware/notFound.middleware.ts";
 
@@ -43,6 +44,7 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/chat", chatRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

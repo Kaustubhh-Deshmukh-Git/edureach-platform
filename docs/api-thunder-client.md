@@ -129,3 +129,72 @@ Retrieve the profile of the currently authenticated user using Bearer authentica
   "message": "Token expired. Please log in again."
 }
 ```
+
+---
+
+## 4. Send Message to Campus Assistant (`Chat`)
+
+Submit an inquiry to the grounded Agentic RAG Campus Assistant. The route requires authentication (`Bearer <TOKEN>`) to protect Gemini API quota and is rate-limited to 20 requests per minute per user.
+
+- **Method:** `POST`
+- **URL:** `http://localhost:5000/api/chat/message`
+- **Headers:**
+  - `Content-Type: application/json`
+  - `Authorization: Bearer <TOKEN_FROM_LOGIN_OR_REGISTER>`
+
+### Request Body
+
+```json
+{
+  "message": "What is the fee for B.Tech CSE?"
+}
+```
+
+> **Constraints:** `message` is required, trimmed, and must be between 1 and 1000 characters.
+
+### Sample Success Response (`200 OK`)
+
+```json
+{
+  "success": true,
+  "data": {
+    "response": "The annual tuition fee for B.Tech in Computer Science and Engineering (CSE) at EduReach College is ₹1,50,000 per year. For day scholars, total fees are ₹1,70,000/year (including institutional fees), while hostellers pay ₹2,50,000/year (including boarding and lodging)."
+  }
+}
+```
+
+### Sample Unauthorized Response (`401 Unauthorized`)
+
+```json
+{
+  "success": false,
+  "message": "Authorization token required."
+}
+```
+
+### Sample Validation Error Response (`400 Bad Request`)
+
+```json
+{
+  "success": false,
+  "message": "Message cannot be empty."
+}
+```
+
+### Sample Rate Limit Response (`429 Too Many Requests`)
+
+```json
+{
+  "success": false,
+  "message": "Too many chat requests. Please try again after a minute."
+}
+```
+
+### Sample Upstream Assistant Unavailable (`502 Bad Gateway`)
+
+```json
+{
+  "success": false,
+  "message": "The assistant is temporarily unavailable. Please try again."
+}
+```

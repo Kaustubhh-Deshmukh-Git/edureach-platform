@@ -2,7 +2,7 @@ import type { Server } from "node:http";
 import { app } from "./app.ts";
 import { env } from "./config/env.config.ts";
 import { connectDB, disconnectDB } from "./config/database.config.ts";
-import { closeRagConnections } from "./services/rag.service.ts";
+import { closeRagConnections, initializeKnowledgeBase } from "./services/rag.service.ts";
 import { logger } from "./utils/logger.util.ts";
 
 let server: Server | null = null;
@@ -10,6 +10,7 @@ let server: Server | null = null;
 async function bootstrap(): Promise<void> {
   try {
     await connectDB();
+    await initializeKnowledgeBase();
 
     server = app.listen(env.PORT, () => {
       logger.info(
