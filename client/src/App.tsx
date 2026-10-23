@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary.tsx";
 import WithNavbar from "./components/WithNavbar.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
+import FloatingChatButton from "./components/FloatingChatButton.tsx";
 
 const LoginPage = lazy(() => import("./pages/LoginPage.tsx"));
 const SignupPage = lazy(() => import("./pages/SignupPage.tsx"));
@@ -53,6 +54,7 @@ export default function App() {
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
+          <FloatingChatButton />
         </AuthProvider>
       </BrowserRouter>
     </ErrorBoundary>
