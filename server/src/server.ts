@@ -2,6 +2,7 @@ import type { Server } from "node:http";
 import { app } from "./app.ts";
 import { env } from "./config/env.config.ts";
 import { connectDB, disconnectDB } from "./config/database.config.ts";
+import { closeRagConnections } from "./services/rag.service.ts";
 import { logger } from "./utils/logger.util.ts";
 
 let server: Server | null = null;
@@ -28,6 +29,7 @@ async function gracefulShutdown(signal: string): Promise<void> {
     server.close(async () => {
       logger.info("HTTP server closed.");
       try {
+        await closeRagConnections();
         await disconnectDB();
         logger.info("Database connection closed. Exiting process.");
         process.exit(0);
@@ -38,6 +40,7 @@ async function gracefulShutdown(signal: string): Promise<void> {
     });
   } else {
     try {
+      await closeRagConnections();
       await disconnectDB();
       process.exit(0);
     } catch {
