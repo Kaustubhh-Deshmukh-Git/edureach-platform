@@ -112,12 +112,12 @@ Visit **`http://localhost:5173`** to access the application.
 The monorepo includes automated linting, typechecking, unit tests, integration tests, and production bundle builds:
 
 ```bash
-# Run full monorepo verification (all 99+ tests across client and server)
+# Run full monorepo verification (all 105+ tests across client and server)
 npm run verify
 
 # Run individual package test suites
 npm --prefix server run test      # 64 server tests (vitest + MongoMemoryServer)
-npm --prefix client run test      # 35 client tests (RTL + jsdom)
+npm --prefix client run test      # 41 client tests (RTL + jsdom)
 
 # Code quality and typing
 npm run lint                      # ESLint checks
@@ -131,7 +131,7 @@ For complete manual verification steps, consult [docs/TESTING.md](docs/TESTING.m
 ## Roadmap & Milestones
 
 - [x] **Part 1 (v0.1.0)**: Full-stack JWT authentication, protected routes, and gated homepage.
-- [ ] **Part 2 (v0.2.0)**: LangChain + Gemini RAG Knowledge Base and Floating Chatbot.
+- [x] **Part 2 (v0.2.0)**: LangChain + Gemini RAG Knowledge Base and Floating Chatbot.
 - [ ] **Part 3 (v0.3.0)**: Vapi Voice AI Agent integration and Live Call Modal.
 - [ ] **Part 4 (v1.0.0)**: Docker multi-stage containerization and cloud deployment.
 
