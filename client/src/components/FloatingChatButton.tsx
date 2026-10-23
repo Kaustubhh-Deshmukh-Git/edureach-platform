@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { MessageSquare, Bot, Sparkles, X } from "lucide-react";
+import { Bot, Sparkles, X } from "lucide-react";
 import { useAuth } from "../context/AuthContext.tsx";
 import ChatDrawer from "./ChatDrawer.tsx";
 

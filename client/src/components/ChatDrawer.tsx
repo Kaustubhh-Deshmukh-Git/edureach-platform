@@ -18,7 +18,7 @@ export interface ChatMessage {
   timestamp: Date;
 }
 
-export const QUICK_QUESTIONS = [
+const QUICK_QUESTIONS = [
   { label: "B.Tech CSE Fees", query: "What is the B.Tech CSE tuition fee?" },
   { label: "Admissions", query: "How does the admission process work?" },
   { label: "Placements", query: "What are the latest campus placement statistics?" },
@@ -26,9 +26,18 @@ export const QUICK_QUESTIONS = [
   { label: "Hostel & Facilities", query: "What are the hostel accommodations and facilities?" },
 ];
 
+const createInitialGreeting = (name?: string): ChatMessage => ({
+  id: "greeting-1",
+  sender: "bot",
+  text: `Hello ${name ? name.split(" ")[0] : "there"}! 👋 I'm the official EduReach Campus Assistant. Ask me anything about courses, fees, admissions, placements, scholarships, or campus hostels!`,
+  timestamp: new Date(),
+});
+
 export default function ChatDrawer({ open, onClose, triggerRef }: ChatDrawerProps) {
   const { user } = useAuth();
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [messages, setMessages] = useState<ChatMessage[]>(() => [
+    createInitialGreeting(user?.name),
+  ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -37,25 +46,11 @@ export default function ChatDrawer({ open, onClose, triggerRef }: ChatDrawerProp
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const previousActiveElement = useRef<HTMLElement | null>(null);
 
-  // Initialize greeting with user's name when drawer opens or user changes
-  useEffect(() => {
-    if (open && messages.length === 0) {
-      const greetingName = user?.name ? user.name.split(" ")[0] : "there";
-      setMessages([
-        {
-          id: "greeting-1",
-          sender: "bot",
-          text: `Hello ${greetingName}! 👋 I'm the official EduReach Campus Assistant. Ask me anything about courses, fees, admissions, placements, scholarships, or campus hostels!`,
-          timestamp: new Date(),
-        },
-      ]);
-    }
-  }, [open, messages.length, user?.name]);
-
   // Handle focus retention and Esc listener
   useEffect(() => {
     if (open) {
       previousActiveElement.current = document.activeElement as HTMLElement | null;
+      const triggerEl = triggerRef?.current;
 
       // Focus the input textarea once drawer opens
       const timer = setTimeout(() => {
@@ -99,8 +94,8 @@ export default function ChatDrawer({ open, onClose, triggerRef }: ChatDrawerProp
         window.removeEventListener("keydown", handleKeyDown);
 
         // Return focus to trigger
-        if (triggerRef?.current) {
-          triggerRef.current.focus();
+        if (triggerEl) {
+          triggerEl.focus();
         } else if (previousActiveElement.current) {
           previousActiveElement.current.focus();
         }
