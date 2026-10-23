@@ -1,0 +1,142 @@
+ABOUT US
+EduReach College of Engineering & Management is a premier higher education institution founded in 2005 in Hyderabad, Telangana. Spanning a 25-acre sustainable green campus in Knowledge City, Gachibowli, the institution holds NAAC A++ accreditation, NBA approval, and affiliation with Jawaharlal Nehru Technological University Hyderabad (JNTUH). With over 150 faculty members (80% holding doctoral degrees) and an enviable 15:1 student-to-faculty ratio, EduReach nurtures technical excellence, ethical leadership, and groundbreaking innovation for over 10,000 alumni thriving globally in Fortune 500 companies.
+
+COURSES OFFERED
+EduReach offers undergraduate, postgraduate, and management programs designed with industry alignment:
+1. Bachelor of Technology (B.Tech - 4 Years, 8 Semesters):
+- Computer Science & Engineering (CSE): 180 seats. Highlights: Industry Lab by Microsoft, Average CTC 10.2 LPA, 100% Internship Placement.
+- Artificial Intelligence & Data Science (AI&DS): 120 seats. Highlights: NVIDIA GPU Compute Cluster, AI Research Lab, Average CTC 9.8 LPA.
+- Electronics & Communication Engineering (ECE): 120 seats. Highlights: Cadence & Synopsys EDA Tools, IoT Prototyping Hub, Average CTC 8.4 LPA.
+- Information Technology (IT): 60 seats. Highlights: AWS & Azure Cloud Tracks, Cyber Security Cell, Average CTC 8.9 LPA.
+- Mechanical Engineering (ME): 60 seats. Highlights: Robotics & Automation Lab, Formula Student Club, Average CTC 6.8 LPA.
+- Civil Engineering (CE): 60 seats. Highlights: BIM & Smart City Software, Concrete Testing Lab, Average CTC 6.5 LPA.
+
+2. Master of Technology (M.Tech - 2 Years, 4 Semesters):
+- Computer Science (M.Tech CS): 30 seats. Highlights: Sponsored Research Projects, Doctoral Track Pathway, Stipend for GATE Scholars.
+- VLSI Design & Embedded Systems (M.Tech VLSI): 24 seats. Highlights: Cleanroom Access, Tie-ups with Semiconductor Firms, Average CTC 11.5 LPA.
+- Structural Engineering (M.Tech SE): 30 seats. Highlights: Wind Tunnel & Shake Table Labs, Consultancy Collaborations, Industry Mentorship.
+
+3. Master of Business Administration (MBA - 2 Years, 4 Semesters):
+- MBA in Finance (MBA-FIN): 60 seats. Highlights: Bloomberg Terminal Access, NSE Certification Track, Average CTC 8.5 LPA.
+- MBA in Marketing (MBA-MKT): 60 seats. Highlights: Live Brand Consulting Projects, Digital Marketing Certifications, Average CTC 8.2 LPA.
+- MBA in Human Resources (MBA-HR): 60 seats. Highlights: SHRM Curriculum Alignment, Corporate HR Mentorship, Average CTC 7.8 LPA.
+- MBA in Information Technology (MBA-IT): 60 seats. Highlights: Scrum Master Certification, Enterprise Tech Practicum, Average CTC 9.0 LPA.
+
+FEES
+EduReach maintains a transparent, competitive fee structure across all academic tiers:
+1. B.Tech Programs (CSE, AI&DS, ECE, IT, ME, CE):
+- Annual Tuition Fee: ₹1,50,000 per year (₹1.5 Lakhs per year).
+- Day Scholar Total: ₹1,70,000 per year (includes ₹1,50,000 tuition fee plus ₹20,000 covering laboratory, digital library access, university examination, and student activity fees).
+- Hosteller Total: ₹2,50,000 per year (includes ₹1,50,000 tuition fee, ₹20,000 institutional fees, and ₹80,000 on-campus hostel accommodation with 4-time dining mess).
+
+2. M.Tech Programs (CS, VLSI, Structural):
+- Annual Tuition Fee: ₹1,00,000 per year (₹1.0 Lakh per year).
+- Day Scholar Total: ₹1,20,000 per year. Hosteller Total: ₹2,00,000 per year.
+
+3. MBA Programs (Finance, Marketing, HR, IT):
+- Annual Tuition Fee: ₹2,00,000 per year (₹2.0 Lakhs per year).
+- Day Scholar Total: ₹2,20,000 per year. Hosteller Total: ₹3,00,000 per year.
+
+4. Scholarships & Financial Assistance:
+- Merit Scholarships: 50% tuition waiver for students ranking in the top 1000 in TS EAMCET / AP EAMCET or securing >95 percentile in JEE Main.
+- Pragati Scholarship for Women Engineers: 25% tuition fee waiver for eligible female engineering aspirants.
+- GATE Fellowship: Monthly stipend of ₹12,400 for all eligible GATE-qualified M.Tech candidates.
+- Need-based Financial Concessions: Special fee assistance for candidates with family income under ₹2.5 LPA.
+
+ADMISSIONS
+Admission to EduReach College follows strict merit and regulatory guidelines:
+1. B.Tech Admissions:
+- Convener Quota (70% seats): Allotted through state government counselling based on ranks in TS EAMCET / AP EAMCET. Eligibility requires 10+2 with Physics, Mathematics, and Chemistry with a minimum of 60% aggregate. JEE Main scores are also accepted.
+- Management & NRI Quota (30% seats): Direct merit-based admissions based on 10+2 aggregate marks and institutional counseling.
+- Application Timeline: Applications open every year on March 1.
+- Required Documentation: 10th and 12th marks memos, Transfer Certificate (TC), Conduct and Study certificates, Migration Certificate (if outside Telangana), Caste/Income certificate (if applicable), Entrance Exam Rank Card & Hall Ticket, Aadhaar card, and 6 passport-size photographs.
+
+2. M.Tech Admissions:
+- Requires a recognized B.Tech or B.E. degree in a relevant discipline with minimum 55% aggregate marks. Selection through GATE score or TS PGECET counselling.
+
+3. MBA Admissions:
+- Requires a Bachelor's degree in any discipline with minimum 50% marks (45% for reserved categories). Admission through TSICET counselling or national management entrance scores (CAT, MAT, XAT).
+- Applications can be completed online at admissions.edureach.edu or in person at the Admissions Office, Knowledge City, Gachibowli, Hyderabad. Admissions helpline: +91 9876543210.
+
+PLACEMENTS
+EduReach maintains a remarkable placement record supported by our dedicated Corporate Relations & Placement Cell (CRPC):
+- Overall Placement Rate: 92% across all academic branches over the past 5 consecutive years.
+- Highest Placement Package: ₹42.0 LPA secured by Computer Science students at Google.
+- Additional Top Packages: ₹38.0 LPA (Microsoft), ₹32.0 LPA (Amazon), ₹18.0 LPA (Deloitte), ₹14.0 LPA (Accenture).
+- Department-Wise Statistics:
+  - Computer Science & Engineering (CSE): 96% placement rate, Average CTC 10.2 LPA, Highest CTC 42.0 LPA.
+  - Artificial Intelligence & Data Science (AI&DS): 94% placement rate, Average CTC 9.8 LPA, Highest CTC 36.0 LPA.
+  - Electronics & Communication (ECE): 90% placement rate, Average CTC 8.4 LPA, Highest CTC 28.0 LPA.
+  - Information Technology (IT): 92% placement rate, Average CTC 8.9 LPA, Highest CTC 26.0 LPA.
+  - Management Studies (MBA): 88% placement rate, Average CTC 8.5 LPA, Highest CTC 22.0 LPA.
+  - Mechanical Engineering (ME): 85% placement rate, Average CTC 6.8 LPA.
+  - Civil Engineering (CE): 84% placement rate, Average CTC 6.5 LPA.
+- Top Recruiters: Google, Microsoft, Amazon, Deloitte, Accenture, TCS Digital, Infosys, Cognizant, Qualcomm, Texas Instruments, and Larsen & Toubro.
+- Career Training: 200+ hours of dedicated coding bootcamps, mock technical panels, soft skills workshops, and hackathons starting from the 5th semester.
+
+CAMPUS & FACILITIES
+EduReach offers a holistic, world-class 25-acre campus environment in Knowledge City, Gachibowli, Hyderabad:
+- 25-Acre Smart Green Campus: Sustainable, eco-friendly infrastructure equipped with campus-wide high-speed Wi-Fi connectivity.
+- 12 Advanced Research Laboratories: NVIDIA GPU Compute Cluster, AI & Deep Learning Research Lab, Cadence & Synopsys VLSI Design Hub, IoT Prototyping Facility, AWS & Azure Cloud Computing Lab, Robotics & Automation Lab, Formula Student EV Automotive Garage, Smart City & BIM Lab, and Material Testing Lab.
+- Central Digital Library: Houses more than 50,000 volumes, 1,000+ national and international e-journals, subscription to IEEE Xplore, ACM Digital Library, and Scopus, with 24/7 digital access.
+- Comprehensive Sports Complex: Floodlit cricket ground, FIFA-standard football turf, Olympic-standard basketball and tennis courts, indoor badminton courts, and fitness gymnasium.
+- Innovation & Incubation Hub: On-campus start-up incubator providing seed funding, legal guidance, IP support, and mentorship from prominent Hyderabad tech entrepreneurs.
+- Health & Wellness: 24/7 health center staffed with medical officers, emergency ambulance service, and dedicated student counseling cell.
+
+HOSTEL & MESS
+Comfortable and secure residential living for outstation students:
+- Separate multi-story residence blocks for boys and girls with 24/7 biometric security and surveillance.
+- Room Configurations: Air-cooled double and triple occupancy rooms furnished with study tables, orthopedic beds, storage wardrobes, and high-speed Wi-Fi.
+- Multi-Cuisine Mess: Provides 4 balanced, hygienic meals daily (breakfast, lunch, evening tea & snacks, dinner) with both North Indian and South Indian vegetarian and non-vegetarian menus. Food quality is regularly inspected by student mess committees, with dedicated RO drinking water filtration.
+- Amenities: Indoor recreational lounges, table tennis, laundry services, 24/7 power backup, and solar water heating.
+- Annual Hostel & Mess Fee: ₹80,000 per year (combined accommodation and complete 4-meal daily dining).
+
+FACULTY
+EduReach prides itself on world-class academic leadership:
+- 150+ full-time faculty members with a personalized 15:1 student-to-faculty ratio.
+- 80% of faculty members hold Ph.D. degrees from premier institutions such as IIT Bombay, IISc Bangalore, IIIT Hyderabad, IIM Ahmedabad, and renowned international universities.
+- Over 150 peer-reviewed research papers published annually in IEEE, ACM, Springer, Elsevier, and Scopus-indexed journals.
+- Active sponsored research initiatives funded by government bodies (DST, AICTE) and multinational corporate partners.
+
+MENTORS
+Distinguished faculty leaders steering academic departments:
+- Dr. Ananya Sharma: Professor & Head of Department, Computer Science & Engineering. Qualification: Ph.D. (IIT Bombay), M.Tech (CSE). Experience: 18+ Years. Specialization: Artificial Intelligence, Distributed Systems, Cloud Architecture.
+- Dr. Rajeshwar Reddy: Dean of Academic Affairs & Professor, Electronics & Communication Engineering. Qualification: Ph.D. (IISc Bangalore), M.S. (VLSI). Experience: 22+ Years. Specialization: Low-Power VLSI, Embedded IoT, Wireless Signal Processing.
+- Dr. Meera Kulkarni: Professor & Director of Research, Artificial Intelligence & Data Science. Qualification: Ph.D. (IIIT Hyderabad), Post-Doctoral (NUS Singapore). Experience: 15+ Years. Specialization: Computer Vision, Deep Learning, Natural Language Processing.
+- Prof. K. Venkatesh Rao: Dean, School of Management Studies (MBA). Qualification: Ph.D. (IIM Ahmedabad), MBA (Finance). Experience: 20+ Years. Specialization: Corporate Valuation, Behavioral Finance, Strategic Leadership.
+
+EVENTS & CLUBS
+Vibrant student life fostering holistic personality development:
+- TechMatrix Hackathon: 48-hour continuous national hackathon held annually in February with 500+ participants competing on real-world challenges.
+- Tarang Cultural Fest: 3-day annual flagship festival in April celebrating music, dance, theater, literature, and live performances by prominent artists.
+- Annual Convocation: Held every August to award degrees to graduating students with keynote addresses by renowned industry chiefs and researchers.
+- Co-Curricular Student Clubs: Coding Club, Google Developer Student Club (GDSC), Robotics & Autonomous Systems Club, IEEE Student Branch, SAE Formula Student Team, Rotaract Club, Literary & Debating Society, and Photography Club.
+
+CONTACT
+Reach out to the EduReach institutional team:
+- Admissions Hotline & Voice Counselor: +91 9876543210 (AI Counselor Ava available for prospective student guidance).
+- Admissions Email: admissions@edureach.edu
+- General Queries Email: info@edureach.edu
+- Campus Address: EduReach Campus, Knowledge City, Gachibowli, Hyderabad - 500081, Telangana, India.
+- Office Hours: Monday through Saturday: 9:00 AM – 5:00 PM IST (Closed Sundays and national holidays).
+- Official Portal: https://edureach.edu
+
+FAQ
+Frequently asked questions regarding EduReach College:
+Q: What degrees and branches are offered at EduReach?
+A: EduReach offers 4-year B.Tech programs in CSE, AI&DS, ECE, IT, ME, and CE; 2-year M.Tech programs in Computer Science, VLSI Design, and Structural Engineering; and 2-year MBA programs in Finance, Marketing, HR, and IT.
+
+Q: What is the fee structure for B.Tech programs?
+A: The annual tuition fee for B.Tech is ₹1,50,000 per year. Day scholars pay a total of ₹1,70,000 per year (including lab and exam fees), while hostellers pay ₹2,50,000 per year (including tuition, institutional fees, and full hostel accommodation with mess food).
+
+Q: How do admissions work for B.Tech?
+A: 70% of seats are filled through state counselling based on TS EAMCET / AP EAMCET ranks, and 30% through management quota. Eligibility requires minimum 60% in 10+2 with PCM. Applications open annually on March 1.
+
+Q: What are the placement highlights?
+A: EduReach achieves a 92% overall placement rate. The highest CTC is ₹42.0 LPA (Google), and the average package for CSE is 10.2 LPA. Leading recruiters include Google, Microsoft, Amazon, Deloitte, and Accenture.
+
+Q: Are hostel accommodations available on campus?
+A: Yes, separate secure hostels for boys and girls with air-cooled rooms and a multi-cuisine mess are available on campus for ₹80,000 per year.
+
+Q: How can I speak to an admissions counselor?
+A: You can call our admissions counselor helpline at +91 9876543210 or email admissions@edureach.edu.
