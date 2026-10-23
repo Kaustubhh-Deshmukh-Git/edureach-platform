@@ -11,7 +11,8 @@ export const chatLimiter = rateLimit({
   limit: 20,
   standardHeaders: true,
   legacyHeaders: false,
-  keyGenerator: (req) => req.user?.userId ?? req.ip ?? "anonymous",
+  keyGenerator: (req) => req.user?.userId ?? "anonymous",
+  validate: { keyGeneratorIpFallback: false },
   skip: () => {
     if (process.env["ENABLE_CHAT_RATE_LIMIT"] === "true") {
       return false;
