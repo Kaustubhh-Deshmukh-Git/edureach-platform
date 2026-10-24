@@ -25,6 +25,7 @@ export interface VapiCallApiResponse {
  */
 export function sanitizePromptText(text: string, maxLength = 80): string {
   return text
+    .replace(/[\r\n\t]+/g, " ")
     .replace(/[\x00-\x1F\x7F]/g, "")
     .replace(/\s+/g, " ")
     .trim()
