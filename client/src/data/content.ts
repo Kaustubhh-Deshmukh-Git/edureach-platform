@@ -562,3 +562,25 @@ export const eventsGallery = [
       "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80",
   },
 ] as const;
+
+export const vapiFormContent = {
+  courses: [
+    "B.Tech Computer Science & Engineering",
+    "B.Tech Artificial Intelligence & Data Science",
+    "B.Tech Electronics & Communication Engineering",
+    "B.Tech Information Technology",
+    "B.Tech Mechanical Engineering",
+    "B.Tech Civil Engineering",
+    "M.Tech Computer Science",
+    "M.Tech VLSI Design & Embedded Systems",
+    "M.Tech Structural Engineering",
+  ],
+  topics: [
+    "Admissions",
+    "Fees & Scholarships",
+    "Placements",
+    "Campus & Hostel",
+    "Course Curriculum",
+    "Other",
+  ],
+} as const;
