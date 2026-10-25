@@ -9,5 +9,8 @@ export default defineConfig({
     hookTimeout: 180000,
     testTimeout: 60000,
     fileParallelism: false,
+    forks: {
+      singleFork: true,
+    },
   },
 });
