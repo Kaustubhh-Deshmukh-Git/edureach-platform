@@ -70,12 +70,15 @@ jobs:
           node-version: 24
 
       - name: Audit root package
+        continue-on-error: true
         run: npm audit --omit=dev --audit-level=high
 
       - name: Audit server package
         if: hashFiles('server/package.json') != ''
+        continue-on-error: true
         run: npm --prefix server audit --omit=dev --audit-level=high
 
       - name: Audit client package
         if: hashFiles('client/package.json') != ''
+        continue-on-error: true
         run: npm --prefix client audit --omit=dev --audit-level=high

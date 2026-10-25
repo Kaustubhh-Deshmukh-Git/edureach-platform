@@ -5,6 +5,9 @@ process.env.JWT_SECRET = "super_secret_test_key_at_least_32_characters_long_for_
 process.env.JWT_EXPIRES_IN = "1d";
 process.env.CLIENT_URL = "http://localhost:5173";
 process.env.GOOGLE_API_KEY = "test_google_api_key_for_testing";
+process.env.VAPI_API_KEY = "test_vapi_api_key_for_testing";
+process.env.VAPI_ASSISTANT_ID = "test_vapi_assistant_id_for_testing";
+process.env.VAPI_PHONE_NUMBER_ID = "test_vapi_phone_number_id_for_testing";
 
 if (process.platform === "win32" && process.cwd().toLowerCase().startsWith("d:")) {
   process.env.TEMP = "D:/temp";

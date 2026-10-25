@@ -17,6 +17,9 @@ export const envSchema = z.object({
   JWT_EXPIRES_IN: z.string().default("7d"),
   CLIENT_URL: z.string().url("CLIENT_URL must be a valid URL"),
   GOOGLE_API_KEY: z.string().min(1, "GOOGLE_API_KEY is required"),
+  VAPI_API_KEY: z.string().min(1, "VAPI_API_KEY is required"),
+  VAPI_ASSISTANT_ID: z.string().min(1, "VAPI_ASSISTANT_ID is required"),
+  VAPI_PHONE_NUMBER_ID: z.string().min(1, "VAPI_PHONE_NUMBER_ID is required"),
 });
 
 export type Env = z.infer<typeof envSchema>;

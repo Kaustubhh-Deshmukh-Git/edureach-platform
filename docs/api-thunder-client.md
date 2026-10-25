@@ -198,3 +198,78 @@ Submit an inquiry to the grounded Agentic RAG Campus Assistant. The route requir
   "message": "The assistant is temporarily unavailable. Please try again."
 }
 ```
+
+---
+
+## 5. Request Voice Assistant Call (`Voice Agent`)
+
+Request an outbound voice call from the AI campus counselor (Ava) powered by Vapi. The endpoint requires authentication (`Bearer <TOKEN>`) and is rate-limited to 3 calls per hour per user.
+
+- **Method:** `POST`
+- **URL:** `http://localhost:5000/api/vapi/call`
+- **Headers:**
+  - `Content-Type: application/json`
+  - `Authorization: Bearer <TOKEN_FROM_LOGIN_OR_REGISTER>`
+
+### Request Body
+
+```json
+{
+  "phoneNumber": "9876543210",
+  "preferredCourse": "B.Tech Computer Science and Engineering"
+}
+```
+
+> **Constraints:**
+>
+> - `phoneNumber`: Required. Must be a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9 (e.g. `9876543210` or `+919876543210`).
+> - `preferredCourse`: Optional string, max 120 characters. Sanitized to remove control characters and newlines.
+
+### Sample Success Response (`200 OK`)
+
+```json
+{
+  "success": true,
+  "data": {
+    "callId": "call_123456789",
+    "status": "queued",
+    "message": "Call initiated successfully. You will receive a call shortly."
+  }
+}
+```
+
+### Sample Unauthorized Response (`401 Unauthorized`)
+
+```json
+{
+  "success": false,
+  "message": "Authorization token required."
+}
+```
+
+### Sample Validation Error Response (`400 Bad Request`)
+
+```json
+{
+  "success": false,
+  "message": "Validation error: Valid 10-digit Indian mobile number starting with 6-9 is required."
+}
+```
+
+### Sample Rate Limit Response (`429 Too Many Requests`)
+
+```json
+{
+  "success": false,
+  "message": "You have reached the maximum of 3 call requests per hour. Please try again later."
+}
+```
+
+### Sample Upstream Service Failure (`502 Bad Gateway`)
+
+```json
+{
+  "success": false,
+  "message": "Failed to initiate voice call. Please try again later."
+}
+```
