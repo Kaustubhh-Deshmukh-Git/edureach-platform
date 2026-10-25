@@ -1,7 +1,5 @@
-import { describe, it, expect, vi, beforeEach, afterEach, beforeAll, afterAll } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import request from "supertest";
-import mongoose from "mongoose";
-import { MongoMemoryServer } from "mongodb-memory-server";
 import { app } from "../src/app.ts";
 import { User } from "../src/models/user.model.ts";
 import { generateToken } from "../src/utils/jwt.util.ts";
@@ -14,41 +12,32 @@ import {
 } from "../src/services/vapi.service.ts";
 
 describe("Voice Agent API (Vapi) & Service Tests", () => {
-  let mongoServer: MongoMemoryServer;
-  let validToken: string;
-  let testUserId: string;
+  const mockUser = {
+    id: "user-123",
+    name: "Aarav Sharma",
+    email: "aarav.voice@edureach.edu",
+    phone: "9876543210",
+  };
 
-  beforeAll(async () => {
-    mongoServer = await MongoMemoryServer.create({
-      binary: { version: "7.0.14" },
-    });
-    await mongoose.connect(mongoServer.getUri());
-    await User.init();
-  }, 300000);
-
-  afterAll(async () => {
-    await mongoose.disconnect();
-    if (mongoServer) {
-      await mongoServer.stop();
-    }
+  const validToken = generateToken({
+    userId: mockUser.id,
+    email: mockUser.email,
   });
 
-  beforeEach(async () => {
-    await User.deleteMany({});
+  beforeEach(() => {
     vi.restoreAllMocks();
     delete process.env["ENABLE_VAPI_RATE_LIMIT"];
 
-    const user = await User.create({
-      name: "Aarav Sharma",
-      email: "aarav.voice@edureach.edu",
-      password: "HashedPassword123!",
-      phone: "9876543210",
-    });
-    testUserId = user.id;
-    validToken = generateToken({
-      userId: user.id,
-      email: user.email,
-    });
+    vi.spyOn(User, "findById").mockImplementation(((id: string) => {
+      if (id === "user-second") {
+        return Promise.resolve({
+          id: "user-second",
+          name: "Second User",
+          email: "second@edureach.edu",
+        });
+      }
+      return Promise.resolve(mockUser);
+    }) as unknown as typeof User.findById);
   });
 
   afterEach(() => {
@@ -297,14 +286,9 @@ describe("Voice Agent API (Vapi) & Service Tests", () => {
       });
 
       // Another user should still be able to call
-      const otherUser = await User.create({
-        name: "Second User",
-        email: "second@edureach.edu",
-        password: "HashedPassword123!",
-      });
       const otherToken = generateToken({
-        userId: otherUser.id,
-        email: otherUser.email,
+        userId: "user-second",
+        email: "second@edureach.edu",
       });
 
       const otherRes = await request(app)
@@ -313,6 +297,20 @@ describe("Voice Agent API (Vapi) & Service Tests", () => {
         .send({ phoneNumber: "9876543210" });
 
       expect(otherRes.status).toBe(200);
+    });
+
+    it("returns 404 when user is not found in database", async () => {
+      vi.spyOn(User, "findById").mockResolvedValueOnce(null);
+      const res = await request(app)
+        .post("/api/vapi/call")
+        .set("Authorization", `Bearer ${validToken}`)
+        .send({ phoneNumber: "9876543210" });
+
+      expect(res.status).toBe(404);
+      expect(res.body).toEqual({
+        success: false,
+        message: "User account not found.",
+      });
     });
   });
 });

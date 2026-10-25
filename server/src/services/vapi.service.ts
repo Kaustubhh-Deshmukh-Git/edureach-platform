@@ -5,7 +5,7 @@ import { AppError } from "../utils/app-error.util.ts";
 export interface OutboundCallParams {
   phoneNumber: string;
   studentName: string;
-  preferredCourse?: string;
+  preferredCourse?: string | undefined;
 }
 
 export interface OutboundCallResult {
@@ -24,12 +24,15 @@ export interface VapiCallApiResponse {
  * Enforces length cap.
  */
 export function sanitizePromptText(text: string, maxLength = 80): string {
-  return text
-    .replace(/[\r\n\t]+/g, " ")
-    .replace(/[\x00-\x1F\x7F]/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, maxLength);
+  return (
+    text
+      .replace(/[\r\n\t]+/g, " ")
+      // eslint-disable-next-line no-control-regex
+      .replace(/[\x00-\x1F\x7F]/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, maxLength)
+  );
 }
 
 /**
