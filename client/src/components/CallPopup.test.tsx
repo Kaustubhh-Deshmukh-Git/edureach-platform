@@ -129,12 +129,12 @@ describe("CallPopup Component & 4-State Machine Tests", () => {
 
   it("handles happy path: transitions from form → calling → done upon success", async () => {
     const user = userEvent.setup();
-    let resolveCall: (val: any) => void = () => {};
-    const callPromise = new Promise((resolve) => {
+    let resolveCall: (val: vapiService.VapiCallApiResponse) => void = () => {};
+    const callPromise = new Promise<vapiService.VapiCallApiResponse>((resolve) => {
       resolveCall = resolve;
     });
 
-    vi.mocked(vapiService.initiateCall).mockImplementation(() => callPromise as any);
+    vi.mocked(vapiService.initiateCall).mockImplementation(() => callPromise);
 
     render(
       <MemoryRouter>
