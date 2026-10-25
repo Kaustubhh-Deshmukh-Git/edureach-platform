@@ -236,7 +236,9 @@ describe("HomePage Gating & Gated Behavior", () => {
     await user.click(callBtn);
 
     expect(screen.getByRole("dialog", { name: /Call with Ava/i })).toBeInTheDocument();
-    expect(screen.getByText(/The interactive Vapi AI voice agent/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Request an instant outbound phone call from Ava/i),
+    ).toBeInTheDocument();
 
     // Click close
     const closeBtn = screen.getByRole("button", { name: /Close call modal/i });

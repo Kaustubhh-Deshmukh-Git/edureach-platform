@@ -24,8 +24,11 @@ export type CallStep = "form" | "calling" | "done" | "error";
 export default function CallPopup({ open, onClose }: CallPopupProps) {
   const { user } = useAuth();
 
+  const [prevOpen, setPrevOpen] = useState(open);
   const [step, setStep] = useState<CallStep>("form");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState(() =>
+    user?.phone ? user.phone.replace(/\D/g, "").slice(-10) : "",
+  );
   const [course, setCourse] = useState("");
   const [topic, setTopic] = useState("");
   const [consent, setConsent] = useState(false);
@@ -36,7 +39,6 @@ export default function CallPopup({ open, onClose }: CallPopupProps) {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const phoneInputRef = useRef<HTMLInputElement | null>(null);
 
-  const [prevOpen, setPrevOpen] = useState(open);
   if (open !== prevOpen) {
     setPrevOpen(open);
     if (open) {
@@ -232,7 +234,7 @@ export default function CallPopup({ open, onClose }: CallPopupProps) {
                   ? "Call Initiated!"
                   : step === "error"
                     ? "Connection Failed"
-                    : `Speak with ${siteConfig.counselorName}`}
+                    : `Call with ${siteConfig.counselorName}`}
             </h3>
           </div>
         </div>
